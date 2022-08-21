@@ -65,23 +65,23 @@
 // }
 
 // Задача 2
-// Console.WriteLine("Введите число 1");
-// int number1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите число 2");
-// int number2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число 1");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число 2");
+int number2 = Convert.ToInt32(Console.ReadLine());
 
-// if(number1>number2)
-// {
-//     Console.WriteLine("Первое число большее, второе меньшее");
-// }
-// if(number1<number2)
-// {
-//     Console.WriteLine("Первое число меньшее, второе большее");
-// }
-// else
-// {
-//     Console.WriteLine("Числа равны");
-// }
+if(number1>number2)
+{
+    Console.WriteLine("Первое число большее, второе меньшее");
+}
+if(number1<number2)
+{
+    Console.WriteLine("Первое число меньшее, второе большее");
+}
+else
+{
+    Console.WriteLine("Числа равны");
+}
 
 // Задача 4
 Console.WriteLine("Введите число 1");
