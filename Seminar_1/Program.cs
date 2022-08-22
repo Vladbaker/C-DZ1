@@ -65,47 +65,61 @@
 // }
 
 // Задача 2
-Console.WriteLine("Введите число 1");
-int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число 2");
-int number2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число 1");
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число 2");
+// int number2 = Convert.ToInt32(Console.ReadLine());
 
-if(number1>number2)
+// if(number1>number2)
+// {
+//     Console.WriteLine("Первое число большее, второе меньшее");
+// }
+// if(number1<number2)
+// {
+//     Console.WriteLine("Первое число меньшее, второе большее");
+// }
+// else
+// {
+//     Console.WriteLine("Числа равны");
+// }
+
+// // Задача 4
+// Console.WriteLine("Введите число 1");
+// int number1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число 2");
+// int number2 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите число 3");
+// int number3 = Convert.ToInt32(Console.ReadLine());
+// int maxNumber = 0;
+
+// if(number1 > number2)
+// {   
+//     maxNumber = number1;
+// }
+// else
+// {
+//     maxNumber = number2;
+// }
+//     if(maxNumber > number3)
+//     {   
+//         Console.WriteLine(maxNumber);
+//     }
+//     else
+//     {
+//         maxNumber = number3;
+//         Console.WriteLine(maxNumber);
+//     }
+
+// Задача №6
+
+Console.WriteLine("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if(number % 2 == 1)
 {
-    Console.WriteLine("Первое число большее, второе меньшее");
-}
-if(number1<number2)
-{
-    Console.WriteLine("Первое число меньшее, второе большее");
+    Console.WriteLine("Число не является чётным");
 }
 else
 {
-    Console.WriteLine("Числа равны");
+    Console.WriteLine("Число является чётным");
 }
-
-// Задача 4
-Console.WriteLine("Введите число 1");
-int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число 2");
-int number2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число 3");
-int number3 = Convert.ToInt32(Console.ReadLine());
-int maxNumber = 0;
-
-if(number1 > number2)
-{   
-    maxNumber = number1;
-}
-else
-{
-    maxNumber = number2;
-}
-    if(maxNumber > number3)
-    {   
-        Console.WriteLine(maxNumber);
-    }
-    else
-    {
-        maxNumber = number3;
-        Console.WriteLine(maxNumber);
-    }
