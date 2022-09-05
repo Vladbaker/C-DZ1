@@ -53,19 +53,35 @@
 
 // Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. 
 //Напишите программу, которая покажет количество чётных чисел в массиве.
+// Console.WriteLine("Введите размер массива");
+// int size = Convert.ToInt32(Console.ReadLine());
+// int[] array = new int[size];
+// int sizelenght = array.Length;
+
+// int evenNum = 0;
+// for (int i =0; i < array.Length; i++)
+// {
+//     array[i] = new Random().Next(100, 1000);
+//     if(array[i]%2==0)
+//     {
+//         evenNum++;
+//     }
+// }
+// Console.WriteLine("Случайный массив "+ "[{0}]", String.Join(",",array));
+// Console.WriteLine("Чётных чисел " +evenNum);
+
+//Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+
 Console.WriteLine("Введите размер массива");
 int size = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[size];
-int sizelenght = array.Length;
+int[] array = new int [size];
+int Length = array.Length;
+int numSum = 0;
 
-int evenNum = 0;
-for (int i =0; i < array.Length; i++)
+for(int i = 0; i< array.Length; i+=2)
 {
-    array[i] = new Random().Next(100, 1000);
-    if(array[i]%2==0)
-    {
-        evenNum++;
-    }
+    array[i] = new Random().Next(-10,10);
+    numSum+=array[i];
 }
-Console.WriteLine("Случайный массив "+ "[{0}]", String.Join(",",array));
-Console.WriteLine("Чётных чисел " +evenNum);
+Console.WriteLine("Случайный массив "+"[{0}]",String.Join(",",array));
+Console.WriteLine("Сумма элементов на нечётной позиции = "+numSum);
