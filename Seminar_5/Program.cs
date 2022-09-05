@@ -51,3 +51,21 @@
 // }
 // Console.WriteLine("[{0}]", String.Join(",",array));
 
+// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. 
+//Напишите программу, которая покажет количество чётных чисел в массиве.
+Console.WriteLine("Введите размер массива");
+int size = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[size];
+int sizelenght = array.Length;
+
+int evenNum = 0;
+for (int i =0; i < array.Length; i++)
+{
+    array[i] = new Random().Next(100, 1000);
+    if(array[i]%2==0)
+    {
+        evenNum++;
+    }
+}
+Console.WriteLine("Случайный массив "+ "[{0}]", String.Join(",",array));
+Console.WriteLine("Чётных чисел " +evenNum);
