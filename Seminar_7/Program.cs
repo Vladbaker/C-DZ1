@@ -79,13 +79,13 @@ Console.WriteLine("Введите количество строк ");
 int rows = int.Parse(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов ");
 int columns = Convert.ToInt32(Console.ReadLine());
-int[,] matrix = new int [rows, columns];
+double[,] matrix = new double [rows, columns];
 
 for(int i = 0; i < rows; i++)
 {
     for(int j = 0; j < columns; j++)
     {
-         matrix[i, j] = new Random().Next(0,0, 10,10);
+         matrix[i, j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
         Console.Write(matrix[i, j] + "\t");
     }
     Console.WriteLine();
