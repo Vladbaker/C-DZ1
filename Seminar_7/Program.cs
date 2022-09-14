@@ -53,25 +53,25 @@
 
 // Задача 51: Задайье двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с инндексами (0, 0); (1, 1); и т.д).
 
-// int rows = int.Parse(Console.ReadLine());
-// int columns = Convert.ToInt32(Console.ReadLine());
-// int sum = 0;
-// int[,] matrix = new int [rows, columns];
+int rows = int.Parse(Console.ReadLine());
+int columns = Convert.ToInt32(Console.ReadLine());
+int sum = 0;
+int[,] matrix = new int [rows, columns];
 
-// for(int i = 0; i < rows; i++)
-// {
-//     for(int j = 0; j < columns; j++)
-//     {
-//          matrix[i, j] = new Random().Next(0, 10);
-//         if(i == j)
-//         {
-//             sum +=matrix[i, j]; 
-//         }
-//         Console.Write(matrix[i, j] + "\t");
-//     }
-//     Console.WriteLine();
-// }
-// Console.WriteLine($"Сумма = {sum}");
+for(int i = 0; i < rows; i++)
+{
+    for(int j = 0; j < columns; j++)
+    {
+         matrix[i, j] = new Random().Next(0, 10);
+        if(i == j)
+        {
+            sum +=matrix[i, j]; 
+        }
+        Console.Write(matrix[i, j] + "\t");
+    }
+    Console.WriteLine();
+}
+Console.WriteLine($"Сумма = {sum}");
 
 // Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 
@@ -90,3 +90,36 @@ for(int i = 0; i < rows; i++)
     }
     Console.WriteLine();
 }
+
+Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+
+Console.WriteLine("Введите позицию элемента в строке ");
+int positionRows = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите позицию элемента в колонке ");
+int positionColumns = int.Parse(Console.ReadLine());
+
+int rows = 10;
+int columns = 10;
+double[,] matrix = new double [rows, columns];
+for(int i = 0; i < rows; i++)
+{
+    for(int j = 0; j < columns; j++)
+    {
+         matrix[i, j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
+        Console.Write(matrix[i, j] + "\t");
+        
+        if(positionRows == i && positionColumns == j)
+        {
+            Console.WriteLine($"Элемент на этой позиции = {matrix[i, j]}");
+        }
+        else 
+            Console.WriteLine("Такого элемента нет");
+    }
+} 
+Console.WriteLine();
+
+// Не смог добить эту задачу
+
+// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+// Не смог решить
